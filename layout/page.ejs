@@ -30,10 +30,10 @@
                 <% } else if (is_tag()) { %>
                     <%- partial('tag-content') %>
 
-                <% } else if (page.title === 'category' || page.title === 'categories') { %>
+                <% } else if (page.type === 'category' || page.type === 'categories') { %>
                     <%- partial('category-list') %>
 
-                <% } else if (page.title === 'tag' || page.title === 'tags') { %>
+                <% } else if (page.type === 'tag' || page.type === 'tags') { %>
                     <%- partial('_partial/tagcloud') %>
 
                 <% } else { %>

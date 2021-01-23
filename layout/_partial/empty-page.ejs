@@ -2,7 +2,7 @@
     <div class="empty-page-container">
 
         <% if (
-                theme.menu.Links && theme.links && (page.title === 'link' || page.title === 'links')
+                theme.menu.Links && theme.links && (page.type === 'link' || page.type === 'links')
         ) { %>
             <%- partial('_partial/friends-link') %>
         <% } %>
@@ -10,7 +10,7 @@
         <div class="empty-page-content markdown-body">
             <% if (page.content) { %>
                 <%- page.content %>
-            <% } else if (page.title !== 'link' && page.title !== 'links') { %>
+            <% } else { %>
                 <h1><%- page.title %></h1>
             <% } %>
         </div>
