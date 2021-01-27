@@ -52,11 +52,27 @@ code-theme(mode) {
 }
 
 
-.normal-code-theme {
+:root {
   code-theme('light');
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    code-theme('light');
+  }
+}
 
-.night-code-theme {
+@media (prefers-color-scheme: dark) {
+  :root {
+    code-theme('dark');
+  }
+}
+
+.light-mode {
+  code-theme('light');
+}
+
+.dark-mode {
   code-theme('dark');
 }
+
