@@ -1,6 +1,7 @@
 <div class="comments-container">
-    <div id="comment-anchor">
-        <i class="fas fa-comments"> <%- __('comments') %></i>
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments">&nbsp;<%- __('comments') %></i>
     </div>
     <% if (theme.comment.valine.enable === true) { %>
         <%- partial('valine') %>

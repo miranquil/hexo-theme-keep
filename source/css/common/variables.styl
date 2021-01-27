@@ -136,10 +136,8 @@ root-color(mode) {
 }
 
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    root-color('dark');
-  }
+:root {
+  root-color('light');
 }
 
 @media (prefers-color-scheme: light) {
@@ -148,9 +146,17 @@ root-color(mode) {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    root-color('dark');
+  }
+}
+
+
 .light-mode {
   root-color('light');
 }
+
 
 .dark-mode {
   root-color('dark');
