@@ -91,6 +91,26 @@ home_article:
 
 
 # ---------------------------------------------------------------------------------------
+# Post page Settings
+# ---------------------------------------------------------------------------------------
+post:
+  # Post word count
+  # Dependencies: hexo-wordcount (npm install hexo-wordcount)
+  # See: https://github.com/willin/hexo-wordcount
+  word_count:
+    enable: false
+    wordcount: false  # word count, one article
+    min2read: false   # time to read, one article
+
+  # Author label
+  author_label:
+    enable: true
+    auto: true  # if true, show Lv1, Lv2, Lv3... , If false, show custom label
+    # label array item can be one or more
+    custom_label_list: [ "Trainee", "Engineer", "Architect", "CTO", "BOSS" ]
+
+
+# ---------------------------------------------------------------------------------------
 # Code copy
 # ---------------------------------------------------------------------------------------
 code_copy:
@@ -110,23 +130,15 @@ toc:
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: false
 
+  # If true, open TOC every time when you enter the article page
+  init_open: false
+
 
 # ---------------------------------------------------------------------------------------
 # Post copyright info
 # ---------------------------------------------------------------------------------------
 copyright_info:
   enable: false
-
-
-# ---------------------------------------------------------------------------------------
-# Post word count
-# Dependencies: hexo-wordcount
-# See: https://github.com/willin/hexo-wordcount
-# ---------------------------------------------------------------------------------------
-post_wordcount:
-  enable: false
-  wordcount: false  # word count, one article
-  min2read: false   # time to read, one article
 
 
 # ---------------------------------------------------------------------------------------
@@ -156,10 +168,12 @@ local_search:
 # Comment plugin
 # ---------------------------------------------------------------------------------------
 comment:
+  enable: false
+  use: valine  # values: valine | gitalk | twikoo
+
   # Valine
   # See: https://github.com/xCss/Valine
   valine:
-    enable: false
     appid:                # your leancloud application appid
     appkey:               # your leancloud application appkey
     placeholder:          # your placeholder
@@ -167,7 +181,6 @@ comment:
   # Gitalk
   # See: https://github.com/gitalk/gitalk
   gitalk:
-    enable: false
     github_id:             # GitHub repo owner
     repository:            # Repository name to store issues
     client_id:             # GitHub Application Client ID
@@ -176,7 +189,6 @@ comment:
   # Twikoo
   # See: https://github.com/imaegoo/twikoo
   twikoo:
-    enable: false
     env_id:                # Tencent Cloud environment id
     region:                # environment region. If select Guangzhou, fill in "ap-guangzhou".
 
@@ -221,4 +233,4 @@ footer:
 # ---------------------------------------------------------------------------------------
 # Keep version (Please don't modify)
 # ---------------------------------------------------------------------------------------
-version: 3.3.2
+version: 3.4.0
