@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------------------------------
 base_info:
   title: Keep Theme
-  author: Keep team
+  author: Keep Team
   url: https://keep.xpoet.cn/
 
 
@@ -227,10 +227,11 @@ pjax:
 # Footer settings
 # ---------------------------------------------------------------------------------------
 footer:
-  since: 2020
+  since: 2020      # the starting year of your website, Can be null
+  icp:             # ICP record number of your website, Can be null
 
 
 # ---------------------------------------------------------------------------------------
 # Keep version (Please don't modify)
 # ---------------------------------------------------------------------------------------
-version: 3.4.0
+version: 3.4.1
