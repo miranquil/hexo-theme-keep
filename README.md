@@ -1,7 +1,8 @@
 <div align="right">
   Language:
   English
-  <a title="Chinese" href="README_zh-CN.md">中文</a>
+  <a title="Chinese" href="docs/README_zh-CN.md">简中</a>
+  <a title="Chinese" href="docs/README_zh-TW.md">繁中</a>
 </div>
 
 <a href="https://xpoet.cn"><img align="center" alt="Keep" src="https://cdn.jsdelivr.net/gh/XPoet/image-hosting@master/hexo-theme-keep/keep-logo-slogan.svg"></a>
@@ -20,13 +21,16 @@
 ## :star2: Online Preview
 
 - **[XPoet's Blog](https://xpoet.cn/)**
-- **[keep official website](https://keep.xpoet.cn/)**
+- **[Keep demo website](https://keep.xpoet.cn/)**
+
+> If you want to put a link to your blog in the online preview list, you can give the author a PR.
 
 ## :rocket: Installation
 
 If you're using Hexo 5.0 or later, the simplest way to install is through npm:
 
 ```sh
+# recommend
 $ cd hexo-site
 $ npm install hexo-theme-keep
 ```
@@ -46,11 +50,11 @@ theme: keep
 
 ## :wrench: Usage
 
-See docs: 
+Please see the official documents of «Keep».
 
-- [Keep theme usage guide](https://keep.xpoet.cn/2020/04/Keep-主题使用指南/)
-
-- [Keep theme configuration guide](https://keep.xpoet.cn/2020/11/Keep-主题配置指南/)
+- **[Keep official document](https://keep-docs.xpoet.cn/)**
+- **[Keep theme configuration guide](https://keep-docs.xpoet.cn/usage-tutorial/configuration-guide.html)**
+- **[Keep theme advanced usage](https://keep-docs.xpoet.cn/usage-tutorial/advanced.html)**
 
 It is not recommended to directly modify any files in the «Keep» theme. Because this may cause errors (e.g. merge conflicts), and the modified files may be discarded when upgrading the theme.
 
@@ -61,6 +65,7 @@ It is not recommended to directly modify any files in the «Keep» theme. Becaus
 Install the latest version throuth npm:
 
 ```sh
+# recommend
 $ cd hexo-site
 $ npm update hexo-theme-keep
 ```
@@ -94,9 +99,9 @@ This project exists thanks to all the people who contribute.
 
 <a href="https://www.jsdelivr.com"><img height="38" src="https://cdn.jsdelivr.net/gh/XPoet/image-hosting@master/hexo-theme-keep/jsDelivr-LOGO.png"></a>
 
-> Thanks jsDelivr for providing public CDN service.
+> Thanks jsDelivr and UNPKG for providing public CDN service.
 
 ## :memo: License
 
-[MIT](https://github.com/XPoet/picx/blob/master/LICENSE) Copyright © 2020 XPoet
+[GPL-3.0](https://github.com/XPoet/hexo-theme-keep/blob/master/LICENSE) Copyright © 2020-present XPoet
 

@@ -1,9 +1,9 @@
 <div align="right">
   语言:
-  中文
-  <a title="Chinese" href="README.md">English</a>
+  简中
+  <a title="English" href="../README.md">English</a>
+  <a title="Chinese" href="README_zh-TW.md">繁中</a>
 </div>
-
 <a href="https://xpoet.cn"><img align="center" alt="Keep" src="https://cdn.jsdelivr.net/gh/XPoet/image-hosting@master/hexo-theme-keep/keep-logo-slogan.svg"></a>
 
 # hexo-theme-keep
@@ -20,13 +20,16 @@
 ## :star2: 在线预览
 
 - **[XPoet's Blog](https://xpoet.cn/)**
-- **[keep 官网](https://keep.xpoet.cn/)**
+- **[keep 演示网站](https://keep.xpoet.cn/)**
+
+> 如果你想把自己的博客链接放在在线预览列表里，可以给作者提 PR 。
 
 ## :rocket: 安装
 
 如果你在使用 Hexo 5.0 或更高版本，最简单的安装方式是通过 npm：
 
 ```sh
+# 推荐
 $ cd hexo-site
 $ npm install hexo-theme-keep
 ```
@@ -35,7 +38,7 @@ $ npm install hexo-theme-keep
 
 ```sh
 $ cd hexo-site
-$ git clone https://github.com/XPoet/hexo-theme-keep themes/keep
+$ git clone https://github.com/XPoet/hexo-theme-keep --depth=1 themes/keep
 ```
 
 安装完成后，在 Hexo 配置文件中将 `theme` 设置为 `keep`。
@@ -46,21 +49,22 @@ theme: keep
 
 ## :wrench: 使用
 
-查看文档: 
+请查看 «Keep» 官方文档：
 
-- [Keep 主题使用指南](https://keep.xpoet.cn/2020/04/Keep-主题使用指南/)
-
-- [Keep 主题配置指南](https://keep.xpoet.cn/2020/11/Keep-主题配置指南/)
+- **[Keep 官方文档](https://keep-docs.xpoet.cn/)**
+- **[Keep 主题配置指南](https://keep-docs.xpoet.cn/usage-tutorial/configuration-guide.html)**
+- **[Keep 主题进阶使用](https://keep-docs.xpoet.cn/usage-tutorial/advanced.html)**
 
 不推荐直接修改 «Keep» 主题的文件。因为这可能导致错误（例如 git merge 冲突），并且在升级主题时修改的文件可能丢失。
 
 ## :dart: 更新
 
-«Keep» 不定期发布新版本。你可以通过如下命令更新 «Keep»。
+«Keep» 不定期发布新版本，你可以通过如下命令更新 «Keep»。
 
 通过 npm 安装最新版本：
 
 ```sh
+# 推荐
 $ cd hexo-site
 $ npm update hexo-theme-keep
 ```
@@ -74,7 +78,7 @@ $ git pull
 
 ## :art: 贡献
 
-我们欢迎你加入 «Keep» 的开发，贡献出你的一份力量。请看[Keep 代码贡献指南](https://keep.xpoet.cn/2020/11/Keep-代码贡献指南/)。
+我们欢迎你加入 «Keep» 的开发，贡献出你的一份力量。请看 [Keep 代码贡献指南](https://keep.xpoet.cn/2020/11/Keep-代码贡献指南/)。
 
 ## :clapper: 贡献者
 
@@ -94,8 +98,8 @@ $ git pull
 
 <a href="https://www.jsdelivr.com"><img height="38" src="https://cdn.jsdelivr.net/gh/XPoet/image-hosting@master/hexo-theme-keep/jsDelivr-LOGO.png"></a>
 
-> jsDelivr 提供了 CDN 服务。
+> jsDelivr 和 UNPKG 提供了 CDN 服务。
 
 ## :memo: 许可
 
-[MIT](https://github.com/XPoet/picx/blob/master/LICENSE) Copyright © 2020 XPoet
+[GPL-3.0](https://github.com/XPoet/hexo-theme-keep/blob/master/LICENSE) Copyright © 2020-present XPoet
